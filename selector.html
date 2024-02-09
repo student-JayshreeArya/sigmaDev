@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* element selector */
+        div{
+            background-color: rgb(155, 155, 230);
+        }
+
+        /* class selector */
+        .red{
+            background-color: rgb(239, 102, 102);
+        }
+
+        /* id selector */
+        #green{
+            background-color: yellow;
+        }
+
+        /* child selector */
+        div > p{
+            color: aqua;
+            background-color: blueviolet;
+        }
+
+        /* descendant selector
+        div p{
+            color: aqua;
+            background-color: blueviolet;
+        } */
+
+        /* universal selector */
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* psuedo selector */
+        a:visited{
+            /* changes the color after visiting the link */
+            color: rgb(23, 72, 23);
+        }
+
+        a:link{
+            /* color of the link before visit */
+            color: rgb(121, 121, 38);
+        }
+
+        a:active{
+            /* when clicking the link color is visible */
+            background-color: violet;
+        }
+
+        a:hover{
+            /* showa color on visiting the link */
+            background-color: turquoise;
+        }
+
+        p:first-child{
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body> 
+    <div>
+        I am first div 
+    </div>
+    <div class="red">
+        I am second div
+    </div>
+    <div id="green">
+        I am third div
+    </div>
+    <div>
+        I am fourth div
+        <p>Hey I am a paragraph</p>
+    </div>
+    <div>
+        I am fifth div
+        <p>Hey I am a paragraph</p>
+    </div>
+    <div>
+        I am sixth div
+        <article>
+            <p>Hey I am a paragraph</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Welcome to Google</a>
+    <a href="https://www.facebook.com">Welcome to Facebook</a>
+
+    <main class="one">
+        <p>I am the main content</p>
+        <!-- this is the first child class of the p -->
+        <p>I am another main content</p>
+    </main>
+    
+</body>
+</html>

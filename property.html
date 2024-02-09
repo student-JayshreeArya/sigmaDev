@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+         h1{
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: rgb(4, 48, 87);
+        }
+        .boxer{
+            /* overflow: auto; */
+            width: 40vw;
+            height: 30vh;
+            margin: 50px;
+            border: 3px solid;
+            padding: 5px;
+            /* overflow-x: hidden; */
+            overflow-y: scroll;
+            text-overflow: ellipsis;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 70vw;
+            margin: 11px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: rgb(161, 189, 213);
+            /* position: absolute; */
+        }
+        .box2{
+            background-color: brown;
+            /* position: absolute; */
+            /* z-index: 1; */
+            top: 60px;
+            left: 60px;
+        }
+        .box3{
+            background-color: aqua;
+            position: relative;
+            z-index: 1;
+        }
+        .box4{
+            background-color: yellow;
+        }
+        .parent{
+            padding: 45px;
+            margin: 45px;
+            border: 2px solid purple;
+            /* transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0) */
+            /* perspective: 0em */
+            /* position: relative; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow Property</h1>
+    <div class="boxer">
+        I am good girl Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, placeat doloremque. Ipsam cumque deserunt pariatur quo iure quae dicta voluptatum est? Sapiente esse animi obcaecati! Dolores ipsam amet similique nihil commodi iure odio quas? Expedita vel, quas voluptatibus reprehenderit fuga sit totam aliquam eligendi nam iusto placeat eum ea culpa deleniti officia ad obcaecati numquam facere voluptatum aliquid blanditiis aperiam labore enim perspiciatis. Explicabo deleniti consectetur, delectus alias sunt dicta fuga in, possimus optio, eveniet fugiat dolorum tempore commodi maiores facilis. Dolor nihil asperiores, aperiam maxime animi quibusdam reprehenderit eveniet fugiat nisi eos harum ex autem dignissimos corporis soluta suscipit!
+    </div>
+<div class="parent">
+    <h1>Position Property</h1>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</div>
+   
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: orange;
+        } */
+
+        .box::first-line{
+            color: green;
+        }
+
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 30px;
+        }
+
+        /* .box:nth-child(odd){
+            background-color: red;
+        } */
+
+        /* elements can be dynamically inserted through CSS using classname:before and after property*/
+        .boxes::before{
+            content: "Welcome to this channel";
+        }
+
+        .boxes::after{
+            content: "Stay Tuned to my Channel";
+            color: purple;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: brown;
+            font-size: 25px;
+        }
+
+        input::placeholder{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic consequatur dolore sed eligendi culpa assumenda, adipisci, non libero ut harum labore et ex iure tenetur quaerat? Praesentium animi blanditiis repellat et dolore error quis quod aut natus explicabo! Neque blanditiis vero eius aliquid ratione in! Nesciunt, dolorem. Facilis doloremque velit sapiente, eum error nam reprehenderit a illum, ratione ullam cum. Dolore iste, quidem totam reprehenderit voluptas in eum, dicta illum labore sunt molestiae aperiam omnis nulla aut aliquam voluptates ducimus libero. Eos vero, molestias deserunt, atque voluptates voluptate perferendis corrupti sequi, fugiat maxime officiis alias possimus neque voluptas a.</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <input type="text" placeholder="Type your text">
+    </div>
+</body>
+</html>

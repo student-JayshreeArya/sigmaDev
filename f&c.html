@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear CSS</title>
+    <style>
+        .cards{
+            border: 3px solid black;
+            display: flow-root;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: left;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: left;
+        }
+
+        /* div p{
+            font-size: 15px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <!-- float property allows the balance between text and the image shown beside it. -->
+        <img src="https://tse3.mm.bing.net/th?id=OIP.XL8bPETlc_FEiquOs-X3NAHaFI&pid=Api&P=0&h=180" width="280px" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta doloribus dignissimos vero minima error sunt facilis repellendus, tenetur doloremque alias. Animi repudiandae facere commodi fuga. Cum a inventore rem.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam consequatur beatae ducimus, quibusdam ratione nesciunt enim, quas officia ipsa blanditiis assumenda labore ipsum. Itaque aliquid unde id reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate quis eaque praesentium corrupti, natus soluta explicabo aliquid ad qui numquam suscipit? Voluptatum, sequi modi! Tenetur labore impedit assumenda saepe enim officiis dicta voluptas est ea. Iure voluptate et culpa dignissimos eveniet facere impedit, aliquam omnis ullam amet dicta temporibus consequuntur? Maxime exercitationem unde rem, corrupti quis, odio ducimus, aliquam consequatur tempora quibusdam dolorem amet eaque architecto totam sapiente debitis commodi aliquid harum blanditiis expedita laudantium pariatur quas. Qui sapiente reiciendis at mollitia id deleniti eum? Obcaecati nihil doloribus accusantium iste debitis, nemo molestiae blanditiis. Facere asperiores accusamus tempore numquam praesentium! Quo aliquam inventore optio reprehenderit modi. Dolorum tempore exercitationem tempora possimus omnis soluta cumque ea officiis, cupiditate, optio ipsa, aspernatur ad minima! Perferendis voluptas corporis, molestias unde ut earum beatae rem deleniti asperiores ratione necessitatibus dicta impedit deserunt in quibusdam voluptatem, excepturi reiciendis laudantium sit omnis temporibus. Sunt expedita, asperiores ea eligendi quos aut vel harum reprehenderit debitis corporis praesentium laudantium vero possimus commodi nobis! Omnis quae ipsa quos aut aspernatur iusto quisquam earum nulla reiciendis tempora repellat, nisi aliquid magnam asperiores qui voluptas, necessitatibus exercitationem? Veritatis, vitae tempora!
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>

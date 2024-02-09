@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Color & Text Properties</title>
+    <style>
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-style: oblique;
+            color: rgb(9, 53, 92);
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2{
+            letter-spacing: 10px; 
+            text-transform: capitalize
+        }
+        
+        h1{
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: rgb(4, 48, 87);
+        }
+        ol{
+            /* color keywords */
+            color: darkred;
+        }
+        h3{
+            /* hex color code */
+            color: #ff83ff;
+            /* rgb */
+            /* color: rgb(58, 163, 163) */
+        }
+
+        h4{
+            color: #ff83ff;
+        }
+        .cgreen{
+            color: rgb(173, 110, 14);
+        }
+        .cpurple{
+            /* jise last m describe krege vahi color show hoga */
+            color: rgb(50, 136, 50);
+        }
+        .boxer{
+            border: 5px solid green;
+            padding: 34px;
+            box-shadow: 15px 15px 5px #70a711;
+        }
+        .text-element{
+            text-shadow: 2px 2px 4px #c40909;
+            outline: 3px solid black;
+            border: 5px solid red;
+            border-radius: 10px;
+            outline-offset: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>Hello fonts</h2>
+        <p>This is a paragraph of fonts</p>
+    </div>
+    <div>
+        <h1>Text</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat qui alias nihil ullam doloremque minus, officiis odio sit laudantium ea obcaecati quod incidunt pariatur sed facere, harum placeat. Laudantium, asperiores.</p> 
+    </div>
+    <div>
+        <h1>Color</h1>
+        <h3>
+            Color can be represented as:
+            <ol>
+                <li>Color Keywords</li>
+                <li>Hex color code</li>
+                <li>RGB</li>
+                <li>RGBA</li>
+                <li>HSL</li>
+            </ol>
+        </h3>
+    </div>
+    <div class="boxer">
+        <h1>Shadow</h1>
+        I am a shadow box <br>
+    </div>
+    
+    <br><br><br>
+    
+
+    <div class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis error quidem velit corporis voluptas recusandae nostrum, a non debitis placeat, adipisci totam necessitatibus itaque atque rerum. Quidem inventore ratione asperiores!
+    </div>
+    <div>
+        <h1>specificity</h1>
+        An algorithm that determines which CSS has strongest match.
+    </div>
+
+        Orgin : the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</div>
+        <h4 class="blue cgreen cpurple">Cascading Style Sheet Specificity</h4>
+
+        The order of specificity is: </div>
+        Inline style > ID selector >  class or attribute selector > Element Selector > Universal Selector
+
+        <h3>Cascade Algorithm</h3>
+        CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+        
+        Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+        
+        Position and order of appearance: the order in which your CSS rules appear
+        
+        Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+        Lets look into all these one by one <br>
+     </div>
+
+
+</body>
+</html>

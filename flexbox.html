@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* align-items: last baseline; */
+            flex-wrap: wrap;
+            align-content: flex-start;
+            /* there is no justfy items in flexbox */
+            flex-flow: row wrap-reverse;
+
+            /* row-gap: 40px; */
+            /* column-gap: 2px; */
+        }
+
+        .items{
+            height: 52px;
+            width: 52px;
+            border: 2px solid black;
+            margin: 10px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items">One</div>
+            <div class="items">Two</div>
+            <div class="items">Three</div>
+            <div class="items">Four</div>
+            <div class="items">Five</div>
+            <div class="items">Six</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+        1. Flex Direction - It defines in which direction the flex elements would be displayed. It takes values like row, column or “reverse” too. <br><br>
+        2. Flex Wrap - By using this property we can make our elements responsive for different screen sizes. <br><br>
+        3. Justify Content - This property is used to set the position of content or rather align content along the main axis. <br><br>
+        4. Align Items - Just like the justify-content property, align-items define the alignment of the flex container but along the cross-axis. (This property used when having single line) <br><br>
+        5. Align Content - This property is very similar to align item but here rather than the flex items, the content present in the item is selected for the property. (This property used when having multiple line)
+    </main>
+</body>
+</html>
